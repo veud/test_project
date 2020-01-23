@@ -1,0 +1,114 @@
+#nav
+	height: 100%
+	padding-top: 25px
+	box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.15)
+.adapt_menu
+	margin: 0
+	top: 0
+	padding: 150px 50px
+	position: fixed
+	z-index: 100
+	background-color: white
+	left: 0
+	height: 100%
+	transition: transform 0.4s ease-in
+	overflow-y: scroll
+	transform: translateX(-100%)
+
+
+.adapt_menu__active 
+	transform: translateX(0%)
+	box-shadow: 0px 0px 60px 10px rgba(204,204,223,0.71)
+
+.nav_menu,
+.bottom_info	
+	display: flex 
+	flex-direction: column
+	margin: 0
+	padding: 0
+
+
+.adapt_menu,
+.nav_menu
+	& li:nth-child(1)
+	  background: url('../../img/house_icon.svg') no-repeat left center	  
+	  list-style: none
+	  padding-left: 40px
+	& li:nth-child(2)
+	  background: url('../../img/receive_icon.svg') no-repeat left center
+	  list-style: none
+	  padding-left: 40px
+	& li:nth-child(3)
+	  background: url('../../img/send_icon.svg') no-repeat left center
+	  list-style: none
+	  padding-left: 40px
+	& li:nth-child(4)
+	  background: url('../../img/stat_icon.svg') no-repeat left center
+	  list-style: none
+	  padding-left: 40px
+	& li:nth-child(5)
+	  background: url('../../img/arrow_icon.svg') no-repeat left center
+	  list-style: none
+	  padding-left: 40px
+	& li:nth-child(6)
+	  background: url('../../img/contr_icon.svg') no-repeat left center
+	  list-style: none
+	  padding-left: 40px
+	& li:nth-child(7)
+	  background: url('../../img/contr_icon.svg') no-repeat left center
+	  list-style: none
+	  padding-left: 40px
+	& li:nth-child(8)
+	  background: url('../../img/card_icon.svg') no-repeat left center
+	  list-style: none
+	  padding-left: 40px
+	& li:nth-child(9)
+	  background: url('../../img/file_icon.svg') no-repeat left center
+	  list-style: none
+	  padding-left: 40px
+	& li:nth-child(10)
+	  background: url('../../img/tag_icon.svg') no-repeat left center
+	  list-style: none
+	  padding-left: 40px
+	& li:nth-child(11)
+	  background: url('../../img/proj_icon.svg') no-repeat left center
+	  list-style: none
+	  padding-left: 40px
+	& li
+	  margin-bottom: 30px
+	& a
+	  text-decoration: none 
+	  font-size: 15px
+	  letter-spacing: 0.25px
+	  color: #212121
+  
+
+.bottom_info
+	margin-top: 50px
+	& li:nth-child(1)
+	  background: url('../../img/tg_icon.svg') no-repeat left center 
+	  list-style: none 
+	  padding-left: 40px
+	& li:nth-child(2)
+	  background: url('../../img/info_icon.svg') no-repeat left center 
+	  list-style: none 
+	  padding-left: 40px
+	& li
+	  margin: 15px 0
+	& a
+	  text-decoration: none 
+	  font-size: 15px
+	  letter-spacing: 0.25px
+	  color: #212121
+
+
+
+
+.message_icon
+	margin-left: 50px
+	font-weight: 500
+	font-size: 13px
+	color: #ffffff
+	border-radius: 50%
+	padding: 5px 10px
+	background-color: #81C784

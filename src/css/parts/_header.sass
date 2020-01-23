@@ -1,0 +1,112 @@
+#header
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.15), 0px 0px 2px rgba(0, 0, 0, 0.1)
+	background-color: #ffffff
+
+.header_content
+	padding: 30px 0
+	display: flex 
+	align-items: center 
+	height: 100%
+
+
+.menu-icon 
+	width: 30px
+	height: 30px
+	cursor: pointer
+	height: 100%
+	display: flex
+	justify-content: center 
+	align-items: center 
+
+
+
+
+.menu-icon-line 
+	position: relative
+	width: 25px
+	height: 3px
+	background: rgba(0, 0, 0, 0.54)
+
+
+.menu-icon-line::before 
+	position: absolute
+	left: 0
+	top: -8px
+	content: ''
+	width: 25px
+	height: 3px
+	background: rgba(0, 0, 0, 0.54)
+	transition: transform 0.2s ease-in, top 0.2s linear 0.2s
+
+
+.menu-icon-line::after 
+	position: absolute
+	left: 0
+	top: 8px
+	content: ''
+	width: 25px
+	height: 3px
+	background: rgba(0, 0, 0, 0.54)
+	transition: transform 0.2s ease-in, top 0.2s linear 0.2s
+
+.menu-icon.menu-icon-active .menu-icon-line 
+	background-color: transparent
+
+
+.menu-icon.menu-icon-active .menu-icon-line::before 
+	transform: rotate(45deg)
+	background-color: rgba(0, 0, 0, 0.54)
+	top: 0
+	transition: top 0.2s linear, transform 0.2s ease-in 0.2s
+
+
+.menu-icon.menu-icon-active .menu-icon-line:after 
+	transform: rotate(-45deg)
+	background-color: rgba(0, 0, 0, 0.54)
+	top: 0
+	transition: top 0.2s linear, transform 0.2s ease-in 0.2s
+
+.header_text
+	margin-left: 30px
+	& p
+	  margin: 0 0 5px 0
+	&__top
+	   text-transform: uppercase
+	   font-size: 16px
+	   color: #37474f
+	&__bottom 
+	   text-transform: uppercase
+	   font-size: 13px
+	   letter-spacing: 1.1px
+	   color: #37474f
+
+
+
+.header_info
+	padding: 30px 0
+	display: flex
+	justify-content: flex-end
+	align-items: center 
+
+
+.right_side
+	display: flex 
+	justify-content: flex-end
+
+.icon_search
+	margin-right: 35px
+	cursor: pointer
+
+.icon_square
+	cursor: pointer
+
+
+.author_info
+	display: flex
+	align-items: center
+	&__photo
+	   margin: 0 10px 0 20px
+	&__text
+	   font-size: 16px
+	   letter-spacing: 0.25px
+	   color: #212121
